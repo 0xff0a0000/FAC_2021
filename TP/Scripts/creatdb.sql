@@ -1,5 +1,3 @@
-CREATE DATABASE webgoat_coins;
-
 use webgoat_coins;
 
 CREATE TABLE Payments (
