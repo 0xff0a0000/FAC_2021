@@ -1,4 +1,5 @@
 /* Create the full set of Classic Models Tables */
+use webgoat_coins;
 
 CREATE TABLE Customers (
   customerNumber INTEGER NOT NULL,
