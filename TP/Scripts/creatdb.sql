@@ -1,4 +1,4 @@
-
+CREATE DATABASE webgoat_coins;
 
 
 CREATE TABLE Payments (
