@@ -10,9 +10,7 @@ resolv-retry infinite
 remote 185.3.46.179 8080 tcp4
 verify-x509-name "VPN_server" name
 remote-cert-tls server
-comp-lzo no
-
-
+push "dhcp-option DNS 192.168.4.254"
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIOZjCCBk6gAwIBAgIBATANBgkqhkiG9w0BAQ0FADCBgDELMAkGA1UEBhMCTFUx
@@ -390,3 +388,26 @@ mg8aK+X8vrEWDkfVW9vUiivpwBHVYH0hIIIqpMAJtamMdge4IDaJaS2uX1mJ8SQ9
 -----END PRIVATE KEY-----
 </key>
 key-direction 1
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+878f063dd84f4e79811354dab268aedc
+cfed53458cc62e76172e2e423ad7e6ee
+e0e58117254e65950767cf985155a9be
+f0821eb69e168f245665a9269b8bc95d
+df77f542d54d23d91db58063ab077456
+48b8641ed2fe8c6ea28da043b86adf8f
+3a2efd957fb18ee3aa55fc8cc735c4b3
+95aae9af5d85e39ad86cfa6a62bd7b8b
+31675b7fb43fa6d2544154bb57dc8a36
+a2fa82d17d3fcefe8c94f3b8ef5dbf00
+8efbacaca987df1dc391956443909ac7
+63b256d201a6339398479829e10df66a
+fd350c705cab29c076f35f58fd98cfcc
+32c2f66eb13d02316a84d6bbb5373844
+c81b018f5c5fe338cfb97762da9c8676
+d4035c9f47ec01df27317c17a756c9e4
+-----END OpenVPN Static key V1-----
+</tls-auth>
