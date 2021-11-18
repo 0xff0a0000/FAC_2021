@@ -12,6 +12,7 @@ verify-x509-name "VPN_server" name
 remote-cert-tls server
 comp-lzo no
 
+
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIOZjCCBk6gAwIBAgIBATANBgkqhkiG9w0BAQ0FADCBgDELMAkGA1UEBhMCTFUx
