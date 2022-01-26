@@ -6,4 +6,4 @@ cp /home/student/Documents/FAC_2021/Wifi/rtw_br_ext.c core/rtw_br_ext.c
 echo -e "blacklist r8188eu.ko\nblacklist r8188eu" > "/etc/modprobe.d/realtek.conf"
 make all
 make install
-reboot
+echo "si aucune erreur -> reboot"
